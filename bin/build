@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+set -e
+set -u
+set -o pipefail
+
+clojure -M:test
+clojure -X:uberjar :jar markov-toy.jar
