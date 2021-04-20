@@ -4,5 +4,7 @@ set -e
 set -u
 set -o pipefail
 
+export LEIN_USE_BOOTCLASSPATH=no
+
 clojure -M:test
 clojure -X:uberjar :jar markov-toy.jar
