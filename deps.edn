@@ -4,6 +4,5 @@
            ring/ring-jetty-adapter {:mvn/version "1.6.3"}}
  :aliases {:test    {:extra-deps  {com.cognitect/test-runner {:git/url "https://github.com/cognitect-labs/test-runner.git"
                                                               :sha     "b6b3193fcc42659d7e46ecd1884a228993441182"}}
-                     :extra-paths ["test"]
-                     :main-opts   ["-m" "cognitect.test-runner"]}
+                     :extra-paths ["test"]}
            :depstar {:extra-deps {com.github.seancorfield/depstar {:mvn/version "2.0.216"}}}}}

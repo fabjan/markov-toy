@@ -4,4 +4,6 @@ set -e
 set -u
 set -o pipefail
 
+clojure -A:test -m cognitect.test-runner
+
 clojure -A:depstar -m hf.depstar.uberjar markov-toy.jar
