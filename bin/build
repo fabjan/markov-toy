@@ -4,4 +4,4 @@ set -e
 set -u
 set -o pipefail
 
-clojure -X:uberjar :jar markov-toy.jar
+clojure -X:uberjar :main-class markov-toy-main :jar markov-toy.jar
